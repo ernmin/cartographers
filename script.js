@@ -108,10 +108,21 @@ function GameController() {
     };
 }
 
-/*function ScreenController() {
+function ScreenController() {
     const game = GameController();
+    const boardDiv = document.querySelector('.board');
+    for(let i = 0; i < 11; i++){
+        for(let j = 0; j < 11; j++){
+            const createDiv = document.createElement("div");
+            createDiv.classList.add('box');
+            boardDiv.appendChild(createDiv);        
+        }
+    }
+
+    
+
 }
 
-ScreenController();*/
+ScreenController();
 
 const game = GameController();
